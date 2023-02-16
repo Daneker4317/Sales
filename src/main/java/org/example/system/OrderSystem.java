@@ -18,6 +18,7 @@ public class OrderSystem {
 
         if(productList.isEmpty() || userList.isEmpty()){
             System.out.println("user list or product list is empty");
+            return;
         }
 
         userList.forEach(System.out::println);
