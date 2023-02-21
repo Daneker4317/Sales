@@ -5,7 +5,6 @@ import org.example.entity.OrdinaryUser;
 import org.example.entity.PrimeUser;
 import org.example.entity.User;
 import org.example.util.Order;
-import org.example.util.UserType;
 
 import java.util.List;
 import java.util.Scanner;
@@ -81,6 +80,7 @@ public class UserSystem {
         );
         userList.remove(ordinaryUser);
         primeUser.setId(ordinaryUser.getId());
+        primeUser.setOrders(ordinaryUser.getOrders());
         userList.add(primeUser);
     }
     
@@ -92,6 +92,7 @@ public class UserSystem {
         );
         userList.remove(primeUser);
         loyalUser.setId(primeUser.getId());
+        loyalUser.setOrders(primeUser.getOrders());
         userList.add(loyalUser);
     }
 

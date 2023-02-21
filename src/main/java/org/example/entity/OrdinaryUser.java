@@ -1,7 +1,5 @@
 package org.example.entity;
 
-import org.example.util.UserType;
-
 public class OrdinaryUser extends User {
     public OrdinaryUser(String name, String surname, double balance ) {
         super(name, surname, balance);

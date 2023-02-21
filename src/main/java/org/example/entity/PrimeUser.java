@@ -1,7 +1,5 @@
 package org.example.entity;
 
-import org.example.util.UserType;
-
 public class PrimeUser extends User {
 
     public PrimeUser(String name, String surname, double balance ) {

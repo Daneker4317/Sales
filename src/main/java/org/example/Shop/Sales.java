@@ -9,7 +9,6 @@ import org.example.util.Order;
 import org.example.util.Product;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class Sales  implements Application {
     private final List<Order> orderList = new ArrayList<>();
@@ -51,7 +50,7 @@ public class Sales  implements Application {
     public List<User> getUserList() {
         userSystem.checkTypes(userList);
         Collections.sort(userList, Comparator.comparing(User::getId));
-        return this.userList;//.stream().sorted(Comparator.comparing(User::getId)).collect(Collectors.toList());
+        return this.userList;
     }
 
     public List<Order> getOrderList() {
